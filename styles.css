@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main {
+    padding: 3em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 30px;
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.menu-item-details {
+    display: flex;
+    gap: 30px;
+    padding: 2em 0;
+}
+
+.menu-item-emoji {
+    font-size: 5em;
+}
+
+.menu-item-name {
+    margin: 0;
+}
+
+.menu-item-ingredients {
+    margin: 0.4rem 0;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.add-btn {
+    height: 1.5em;
+    width: 1.5em;
+    min-width: 1.5em;
+    font-size: 1.5em;
+    line-height: 24px;
+    border: 1px solid #8b8b8b;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.1em;
+    align-self: center;
+}
+
+.add-btn:hover,
+.add-btn:focus {
+    background-color: #16db99;
+    color: #fff;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.order-container {
+    margin-top: 40px;
+}
+
+.all-items,
+.total-price {
+    display: flex;
+    align-items: center;
+}
+
+.order-name,
+.order-price {
+    font-size: 1.5em;
+}
+
+.order-price {
+    margin-left: auto;
+}
+
+.remove-btn {
+    margin-left: 3px;
+    background-color: #fff;
+    border: none;
+    color: #8b8b8b;
+}
+
+.remove-btn:hover,
+.remove-btn:active {
+    color: #ba181b;
+    cursor: pointer;
+}
+
+.total-price {
+    border-top: 1px solid #343a40;
+}
+
+.complete-order-btn {
+    display: inline-block;
+    padding: 20px 0;
+    margin-top: 20px;
+    border: #16db99;
+    width: 100%;
+    background-color: #16db99;
+    color: #fff;
+    font-family: Geist, sans-serif;
+    cursor: pointer;
+}
+
+.complete-order-btn:hover {
+    opacity: 0.8;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.close-btn {
+    border: none;
+    color: #757575;
+    background: transparent;
+    font-size: 25px;
+    font-family: Geist, sans-serif;
+    padding: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.payment-modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 10px;
+}
+
+.inner-payment-modal {
+    width: 350px;
+    margin: 0 auto;
+    font-family: Geist, sans-serif;
+}
+
+.inner-payment-model h2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#form {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    margin-top: 10px;
+    border: 1px solid #757575;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.order-btn {
+    background-color: #16db99;
+    border: none;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 15px 0 10px 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    opacity: 0.8;
+}
+
+.thank-you-msg {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #ecfdf5;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
