@@ -27,13 +27,13 @@ document.addEventListener("click", function(e) {
     }
 })
 
-document.addEventListener("click", e => {
+document.addEventListener("click", function(e) {
     if(e.target.dataset.remove) {
         const removeId = e.target.dataset.remove
         const removeIndex = cartItems.findIndex( item => item.id === removeId)
         if(removeIndex > -1) {
             if(cartItems[removeIndex].quantity > 1) {
-                cartItems[removeIndex].quantity =- 1
+                cartItems[removeIndex].quantity -= 1
             } else {
                 cartItems.splice(removeIndex, 1)
             }
